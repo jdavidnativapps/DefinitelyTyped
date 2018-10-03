@@ -428,6 +428,10 @@ export class Layer extends Evented {
     getEvents?(): {[name: string]: (event: LeafletEvent) => void};
     getAttribution?(): string | null;
     beforeAdd?(map: Map): this;
+    
+    //Methods to show and hide layer
+    hide();
+    show();
 
     protected _map: Map;
 }
